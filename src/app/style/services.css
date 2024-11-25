@@ -1,0 +1,120 @@
+/* Section and Container */
+.services-section {
+    background-color: black;
+    color: white;
+    padding: 6rem 1.25rem;
+  }
+  
+  .services-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Header Title */
+  .services-header {
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+  
+  .services-title {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    color: white;
+    animation: bounce 1s infinite;
+  }
+  
+  .services-title-highlight {
+    color: #ec4899; /* pink-600 */
+  }
+  
+  .services-title:hover .services-title-highlight {
+    color: white;
+  }
+  
+  /* Service Cards */
+  .services-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .service-card {
+    padding: 1rem;
+    width: 30%;
+    text-align: center;
+    margin-bottom: 3rem;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .service-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .service-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    margin-bottom: 1.25rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .service-icon:hover {
+    transform: rotate(12deg) scale(1.1);
+  }
+  
+  .service-info {
+    flex-grow: 1;
+  }
+  
+  .service-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  .service-description {
+    font-size: 1rem;
+    color: #d1d5db; /* gray-300 */
+  }
+  
+  /* Specific Icon Backgrounds */
+  .service-icon-web {
+    background: linear-gradient(to bottom right, #3b82f6, #14b8a6); /* blue-500 to teal-400 */
+  }
+  
+  .service-icon-design {
+    background: linear-gradient(to bottom right, #ec4899, #f59e0b); /* pink-500 to yellow-400 */
+  }
+  
+  .service-icon-responsive {
+    background: linear-gradient(to bottom right, #10b981, #fbbf24); /* green-500 to yellow-500 */
+  }
+  
+  /* Button */
+  .contact-btn {
+    display: block;
+    margin: 3rem auto;
+    padding: 0.75rem 2rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+    background: linear-gradient(to right, #ef4444, #f97316); /* red-600 to orange-500 */
+    color: white;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-btn:hover {
+    background: linear-gradient(to right, #dc2626, #fb923c); /* red-700 to orange-600 */
+    transform: scale(1.1);
+  }
+  

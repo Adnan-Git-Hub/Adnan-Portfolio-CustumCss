@@ -1,0 +1,115 @@
+/* Hero Section */
+.hero {
+    color: white;
+  }
+  
+  .hero-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem 1.25rem; /* padding-x: 1.25rem, padding-y: 6rem */
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+  }
+  
+  .hero-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+  
+  .hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ec4899; /* pink-600 */
+    margin-left: 1.25rem;
+    text-transform: uppercase;
+    transition: all 0.3s;
+  }
+  
+  .hero-title:hover {
+    color: white;
+  }
+  
+  .hello-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hero-description {
+    margin-top: 1.25rem;
+    line-height: 1.75rem;
+    font-size: 1rem;
+    max-width: 640px; /* Corresponding to max-w-lg */
+  }
+  
+  .hero-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+    gap: 1rem;
+  }
+  
+  .github-button, .linkedin-button {
+    background-color: #1f2937; /* gray-800 */
+    border: 1px solid #1f2937;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 9999px;
+    transition: background-color 0.3s;
+  }
+  
+  .github-button:hover {
+    background-color: #4b5563; /* gray-600 */
+  }
+  
+  .linkedin-button {
+    background-color: #2563eb; /* blue-600 */
+    border: 1px solid #2563eb;
+  }
+  
+  .linkedin-button:hover {
+    background-color: #60a5fa; /* blue-400 */
+  }
+  
+  /* Right Section */
+  .hero-right {
+    max-width: 25rem; /* lg:max-w-lg */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-wrapper {
+    position: relative;
+    border: 8px solid #ec4899; /* pink-600 */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 9999px;
+    width: 30rem;
+    height: 30rem;
+    overflow: hidden;
+    transition: transform 0.7s;
+  }
+  
+  .profile-image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.7s;
+  }
+  
+  .image-wrapper:hover .profile-image {
+    transform: scale(1.5);
+  }
+  
